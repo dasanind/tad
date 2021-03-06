@@ -1,0 +1,177 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/registration_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/registerTV"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/miniver"
+        android:text="Register"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@id/emailRegisterET"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText android:id="@+id/emailRegisterET"
+        android:fontFamily="SF Pro Text"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/registerTV"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="335dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:background="@drawable/etext_button_bck"
+        android:backgroundTint="@color/edit_text_bck_color"
+        android:hint="Email address"
+        android:textColor="#6d6d6d "
+        />
+
+    <EditText android:id="@+id/emailPasswordET"
+        android:fontFamily="SF Pro Text"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/emailRegisterET"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="335dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:background="@drawable/etext_button_bck"
+        android:backgroundTint="@color/edit_text_bck_color"
+        android:hint="Password"
+        android:textColor="#636363"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/registration_phoneNumber_EF"
+        android:fontFamily="SF Pro Text"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/emailPasswordET"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="335dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:background="@drawable/etext_button_bck"
+        android:backgroundTint="@color/edit_text_bck_color"
+        android:hint="Phone number- Ignore for now"
+        android:textColor="#6d6d6d "
+        />
+
+    <Button
+        android:id="@+id/createAccountBtn"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/etext_button_bck"
+        android:backgroundTint="@color/btn_bck_color"
+        app:layout_constraintTop_toBottomOf="@id/registration_phoneNumber_EF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:text="Continue"
+        android:fontFamily="SF Pro Text"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:textAlignment="center"/>
+
+    <RelativeLayout
+        android:id="@+id/googleRegisterRV"
+        android:clickable="true"
+        android:background="@drawable/etext_button_bck"
+        android:backgroundTint="@color/edit_text_bck_color"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#6d6d6d "
+        app:layout_constraintTop_toBottomOf="@id/or"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <ImageView
+            android:id="@+id/ggogleIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/google_icon_img"
+            />
+        <TextView
+            android:id="@+id/googleRegBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue with Google"
+            android:fontFamily="SF Pro Text"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:layout_toRightOf="@id/ggogleIcon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            />
+
+    </RelativeLayout>
+
+    <TextView android:id="@+id/or"
+        android:fontFamily="SF Pro Text"
+        android:textColor="@color/edit_text_bck_color"
+        app:layout_constraintTop_toBottomOf="@id/createAccountBtn"
+        app:layout_constraintLeft_toRightOf="@id/lineLeftIV"
+        app:layout_constraintRight_toLeftOf="@id/lineRightIV"
+        android:layout_marginTop="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        />
+
+    <ImageView android:id="@+id/lineLeftIV"
+        android:src="@drawable/line_img"
+        app:tint="@color/edit_text_bck_color"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/createAccountBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <ImageView android:id="@+id/lineRightIV"
+        android:src="@drawable/line_img"
+        app:tint="@color/edit_text_bck_color"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintLeft_toRightOf="@id/or"
+        app:layout_constraintTop_toBottomOf="@id/createAccountBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/gotoLoginBtn"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/etext_button_bck"
+        android:backgroundTint="@color/btn_bck_color"
+        app:layout_constraintTop_toBottomOf="@id/googleRegisterRV"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:text="Already registered? Log In"
+        android:fontFamily="SF Pro Text"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

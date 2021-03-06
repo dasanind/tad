@@ -1,0 +1,192 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content" >
+
+    <ScrollView android:id="@+id/custom___1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout android:id="@+id/content_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout android:id="@+id/page_custom___1_ek1"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <View android:id="@+id/_bg__custom___1_ek2"
+                    android:background="@drawable/custom_shape_reqitem"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="393dp"
+                    android:layout_height="790dp" />
+
+                <View android:id="@+id/rectangle_47"
+                    android:background="@drawable/rect_reqitem"
+                    android:alpha="0.4"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="269dp"
+                    android:layout_width="335dp"
+                    android:layout_height="56dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="49dp"
+                    android:layout_marginTop="275dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nameLayout">
+
+                <EditText android:id="@+id/nameET"
+                    android:fontFamily="SF Pro Text"
+                    android:alpha="0.50196078431373"
+                    android:textSize="15sp"
+                    android:textColor="#000"
+                    android:layout_width="335dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Your name"
+                    />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageButton android:id="@+id/updateNameImgBtn"
+                    android:src="@drawable/ic_mode_edit_black_24dp"
+                    android:contentDescription="shape"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginTop="287dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"/>
+
+                <View android:id="@+id/rectangle_47_ek1"
+                    android:background="@drawable/rect_reqitem"
+                    android:alpha="0.4"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="367dp"
+                    android:layout_width="335dp"
+                    android:layout_height="56dp" />
+
+                <EditText android:id="@+id/addressET"
+                    android:fontFamily="SF Pro Text"
+                    android:alpha="0.50196078431373"
+                    android:textSize="15sp"
+                    android:textColor="@color/item_name_color"
+                    android:layout_marginLeft="49dp"
+                    android:layout_marginTop="385dp"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Address"
+                    />
+                <ImageButton android:id="@+id/updateAddressImgBtn"
+                    android:src="@drawable/ic_mode_edit_black_24dp"
+                    android:contentDescription="shape"
+                    android:layout_marginLeft="320dp"
+                    android:layout_marginTop="385dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"/>
+
+                <View android:id="@+id/rectangle_47_ek2"
+                    android:background="@drawable/rect_reqitem"
+                    android:alpha="0.4"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="465dp"
+                    android:layout_width="335dp"
+                    android:layout_height="56dp" />
+
+                <TextView android:id="@+id/emailET"
+                    android:fontFamily="SF Pro Text"
+                    android:alpha="0.50196078431373"
+                    android:textSize="15sp"
+                    android:textColor="@color/item_name_color"
+                    android:layout_marginLeft="49dp"
+                    android:layout_marginTop="483dp"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Email"
+                    />
+
+                <Button android:id="@+id/saveBtn"
+                    android:fontFamily="SF Pro Text"
+                    android:layout_gravity="center_horizontal|center"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="#fff"
+                    android:background="@drawable/rect_button"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="678dp"
+                    android:layout_width="335dp"
+                    android:layout_height="56dp"
+                    android:text="Save Changes"
+                    />
+
+
+
+
+                <RelativeLayout android:id="@+id/background"
+                    android:layout_marginTop="-0dp"
+                    android:layout_marginStart="-0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView android:id="@+id/path_5"
+                        android:src="@drawable/curve3reqitem"
+                        android:contentDescription="path_5"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="394dp"
+                        android:layout_height="219.98468017578dp" />
+
+                    <ImageView android:id="@+id/path_4"
+                        android:src="@drawable/curve2reqitem"
+                        android:contentDescription="path_4"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="393.99993896484dp"
+                        android:layout_height="189.11227416992dp" />
+
+                    <ImageView android:id="@+id/path_2"
+                        android:src="@drawable/curve1reqitem"
+                        android:contentDescription="path_2"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="393.99993896484dp"
+                        android:layout_height="195.83245849609dp" />
+
+                    <ImageView android:id="@+id/path_1004"
+                        android:src="@drawable/curve4reqitem"
+                        android:contentDescription="path_1004"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_width="394.00006103516dp"
+                        android:layout_height="188.81866455078dp" />
+
+
+                </RelativeLayout>
+                <TextView android:id="@+id/request_item"
+                    android:fontFamily="SF Pro Text"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="82dp"
+                    android:layout_width="335dp"
+                    android:layout_height="49dp"
+                    android:text="Your Profile"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</HorizontalScrollView>

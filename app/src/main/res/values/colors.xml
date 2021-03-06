@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="redBackground">#ee2038</color>
+    <color name="primaryOrange">#FF8C00</color>
+    <color name="primaryBlue">#3257BD</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="_bg__custom___5_color">#ffffff</color>
+    <color name="rectangle_47_color">#efefef</color>
+    <color name="item_name_color">#212121</color>
+    <color name="rectangle_77_color">#5abd8c</color>
+
+
+    <color name="_bg__custom___7_ek2_color">#ffffff</color>
+    <color name="sign_in_color">#212621</color>
+    <color name="contact_blakezajac_com_color">#000000</color>
+    <color name="sign_in_ek1_color">#ffffff</color>
+    <color name="stay_logged_in_color">#212121</color>
+    <color name="edit_text_bck_color">#F0F0F0</color>
+    <color name="btn_bck_color">#0198E1</color>
+    <color name="google_bck_color">#D43D1A</color>
+    <color name="text_color">#5E5E5E</color>
+</resources>

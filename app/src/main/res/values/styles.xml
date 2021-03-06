@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="RadioButton.Login" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">#fff</item>
+        <item name="buttonTint">@color/text_color</item>
+    </style>
+    <style name="Button">
+        <item name="android:background">@drawable/etext_button_bck</item>
+        <item name="android:backgroundTint">@color/btn_bck_color</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,175 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/appNameTV"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="75dp"
+        android:fontFamily="@font/miniver"
+        android:text="@string/login"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@id/emailET"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <EditText android:id="@+id/emailET"
+        android:fontFamily="SF Pro Text"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/appNameTV"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="335dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:background="@drawable/etext_button_bck"
+        android:backgroundTint="@color/edit_text_bck_color"
+        android:hint="@string/email_address"
+        android:textColor="#6d6d6d "
+
+        />
+
+
+    <EditText android:id="@+id/passwordET"
+        android:fontFamily="SF Pro Text"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/emailET"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="335dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/etext_button_bck"
+        android:backgroundTint="@color/edit_text_bck_color"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="#636363">
+
+    </EditText>
+    <Button
+        android:id="@+id/logInBtn"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/etext_button_bck"
+        android:backgroundTint="@color/btn_bck_color"
+        app:layout_constraintTop_toBottomOf="@id/passwordET"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="@string/login"
+        android:fontFamily="SF Pro Text"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/forgotPasswordTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        app:layout_constraintTop_toBottomOf="@id/logInBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:clickable="true">
+
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/googleRV"
+        android:clickable="true"
+        android:background="@drawable/etext_button_bck"
+        android:backgroundTint="@color/edit_text_bck_color"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#6d6d6d "
+        app:layout_constraintTop_toBottomOf="@id/or"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <ImageView
+            android:id="@+id/ggogleIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/google_icon_img"
+            android:contentDescription="@null"
+            />
+        <TextView
+            android:id="@+id/googleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue with Google"
+            android:fontFamily="SF Pro Text"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/ggogleIcon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp">
+
+        </TextView>
+    </RelativeLayout>
+
+    <TextView android:id="@+id/or"
+        android:fontFamily="SF Pro Text"
+        android:textColor="#000"
+        app:layout_constraintTop_toBottomOf="@id/forgotPasswordTV"
+        app:layout_constraintLeft_toRightOf="@id/lineLeftIV"
+        app:layout_constraintRight_toLeftOf="@id/lineRightIV"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        />
+
+    <ImageView android:id="@+id/lineLeftIV"
+        android:src="@drawable/line_img"
+        app:tint="#000"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/forgotPasswordTV"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <ImageView android:id="@+id/lineRightIV"
+        android:src="@drawable/line_img"
+        app:tint="#000"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintLeft_toRightOf="@id/or"
+        app:layout_constraintTop_toBottomOf="@id/forgotPasswordTV"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <Button
+        android:id="@+id/goToRegBtn"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/etext_button_bck"
+        android:backgroundTint="@color/btn_bck_color"
+        app:layout_constraintTop_toBottomOf="@id/googleRV"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="New? Create an account"
+        android:fontFamily="SF Pro Text"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:textAlignment="center"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
