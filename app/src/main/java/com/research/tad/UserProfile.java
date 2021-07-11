@@ -85,7 +85,7 @@ public class UserProfile extends BaseDrawerActivity {
         final FirebaseUser user = mAuth.getCurrentUser();
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         final String userId = user.getUid();
-        final DatabaseReference userDetailsRef = database.getReference("donors/"+userId);
+        final DatabaseReference userDetailsRef = database.getReference("users/"+userId);
         userDetailsRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -103,7 +103,6 @@ public class UserProfile extends BaseDrawerActivity {
 
             }
         });
-
     }
     protected boolean checkTextFields() {
         TextInputLayout nameLayout = findViewById(R.id.nameLayout);

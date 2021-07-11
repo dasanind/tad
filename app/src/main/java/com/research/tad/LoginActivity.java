@@ -243,7 +243,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                 Log.d(TAG, "onDataChange: ");
                 if(dataSnapshot.exists()) {
                     Toast.makeText(getApplicationContext(), "Logged In ", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(LoginActivity.this, UserProfile.class);
+                    Intent intent = new Intent(LoginActivity.this,RequestVehicleActivity.class);
                     startActivity(intent);
                 } else {
                     Intent intent = new Intent(LoginActivity.this, CreateProfileActivity.class);
